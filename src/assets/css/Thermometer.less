@@ -1,0 +1,440 @@
+.mosquito-wrapper {
+    .maskLayer {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, .5);
+        z-index: 99;
+        display: none;
+        
+        .mask-content {
+            text-decoration: none;
+            position: absolute;
+            top: 38%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 590px;
+            height: 320px;
+            box-sizing: border-box;
+            background-color: #5893FD;
+            padding: 5px;
+            opacity: 0;
+            .close {
+                position: absolute;
+                right: -30px;
+                top: -30px;
+                width: 24px;
+                height: 24px;
+                cursor: pointer;
+                background-image: url('../image/cha.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+            .mask-box {
+                display: block;
+                .mask-left {
+                    float: left;
+                }
+                .mask-right {
+                    float: left;
+                    display: flex;
+                    width: 310px;
+                    box-sizing: border-box;
+                    flex-direction: column;
+                    align-items: center;
+                    .offer {
+                        font-size: 28px;
+                        color: #ffffff;
+                    }
+                    .OEI {
+                        font-size: 18px;
+                        color: #101010;
+                    }
+                    .save {
+                        span {
+                            font-size: 20px;
+                            color: #101010;
+                            margin-right: 5px;
+                        }
+                        strong {
+                            font-size: 34px;
+                            color: #ffffff;
+                            letter-spacing: -1.9px;
+                        }
+                    }
+                    .date-area {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        margin-top: 10px;
+                        .time-box {
+                            width: 90px;
+                            height: 90px;
+                            margin: 0 3px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            position: relative;
+                            .text {
+                                font-size: 14px;
+                                color: #ffffff;
+                                font-weight: bold;
+                            }
+                            .time {
+                                margin-top: 7px;
+                               display: flex;
+                               width: 100%;
+    
+                               justify-content: space-around;
+                                span {
+                                    display: inline-block;
+                                    width: 40px;
+                                    height: 60px;
+                                    text-align: center;
+                                    line-height: 60px;
+                                    font-size: 50px;
+                                    font-weight: bold;
+                                    color: #535353;
+                                    // margin: 0 3px;
+                                    border-radius: 5px;
+                                    background-color: #ffffff;
+                                }
+                            }
+                            &.colon {
+                                &::after{
+                                    position: absolute;
+                                    content: ':';
+                                    right: -15px;
+                                    bottom: 0px;
+                                    color: #ffffff;
+                                    font-size: 50px;
+                                }
+                            }
+                        }
+                    }
+                    .desc {
+                        font-size: 18px;
+                        margin: 10px 0px;
+                    }
+                    .btn {
+                        text-decoration: none;
+                        display: block;
+                        width: 295px;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #ffffff;
+                        letter-spacing: -0.9px;
+                        background-color: #FF7B39;
+                        box-shadow: 0px 0px 8px 5px #B3D1Ff;
+                        transition: all linear 0.15s;
+                        &:hover {
+                            box-shadow: none;
+                            background-color: rgb(255, 171,82);
+    
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+    }
+    .area-title {
+        font-size: 28px;
+        margin-bottom: 18px;
+        color: #353535;
+        font-family: 'Helvetica-bold';
+    }
+    .mosquito-header {
+        width: @rootWidth;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .header-left {
+
+            .logo {
+                display: inline-block;
+                width: 219px;
+                height: 35px;
+                vertical-align: middle;
+            }
+            p {
+                display: inline-block;
+                vertical-align: middle;
+                height: 35px;
+                line-height: 35px;
+                border-left: 1px solid #bbbbbb;
+                padding-left: 13px;
+                margin-left: 10px;
+                color: #308FF3;
+            }
+        }
+        .btn {
+            display: block;
+            width: 254px;
+            height: 68px;
+            line-height: 68px;
+            text-align: center;
+            background-color: #308FF3;
+            color: #ffffff;
+            font-size: 18;
+            font-family: 'Helvetica-bold';
+            text-decoration: none;
+        }
+    }
+    .banner {
+        width: 100%;
+        height: 196px;
+        background-image: url('../image/thermometer/banner.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        .banner-container {
+            width: @rootWidth;
+            margin: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .banner-content {
+                // width: 565px;
+                height: 150px;
+                // background-color: rgba(255,255,255,.5);
+                font-size: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                box-sizing: border-box;
+                // padding-left: 53px;
+                .g {
+                    color: #308FF3;
+                }
+                .a {
+                    // margin-top: 10px;
+                    color: #535353;
+                }
+                .update-box {
+                    margin-top: 15px;
+                    font-size: 18px; 
+                    font-family: 'Open Sans';
+                    color: #535353;
+                    .icon {
+                        display: inline-block;
+                        width: 22px;
+                        height: 22px;
+                        background-size: cover;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-image: url('../image/thermometer/banner-icon.svg');
+                        margin-right: 5px;
+                    }
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .seal-picture {
+                margin-left: 40px;
+                width: 120px;
+            }
+        }
+        
+    }
+    .container {
+        width: @rootWidth;
+        margin: auto;
+        .desc-area {
+            margin-top: 28px;
+            margin-bottom: 25px;
+            .desc-content {
+                font-size: 16px;
+                color: #353535;
+                line-height: 28px;
+                font-family: 'Open Sans';
+                p {
+                    margin: 10px 0px;
+                }
+            }
+        }
+        .product-area {
+            margin-bottom: 60px;
+            .product-area-title {
+                font-size: 20px;
+                margin-bottom: 30px;
+            }
+            
+        }
+        .why-area {
+            .info {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            .why-container {
+                .content {
+                    line-height: 28px;
+                    font-family: 'Open Sans';
+                    color: #353535;
+                    font-size: 16px;
+                    p {
+                        margin: 10px 0px;
+                    }
+                }
+            }
+        }
+        .how-work-area {
+            margin: 60px 0px;
+            .step-box {
+               .step-item {
+                width: 100%;
+                height: 200px;
+                margin: 10px 0px;
+                background-color: #ECF4FD;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                
+                .circle-box {
+                    width: 100px;
+                    height: 100px;
+                    box-sizing: border-box;
+                    border: 5px solid #308FF3;
+                    color: #308FF3;
+                    font-size: 24px;
+                    font-family: 'Helvetica-bold';
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    position: relative;
+                    
+                    &::before {
+                        position: absolute;
+                        width: 36px;
+                        height: 36px;
+                        background-size: cover;
+                        background-position: center center;
+                        background-image: url('../image/thermometer/down.svg');
+                        background-repeat: no-repeat;
+                        content: "";
+                        bottom: -83px;
+
+                    }
+                    
+                }
+                &:nth-last-of-type(1) {
+                    .circle-box {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    
+                } 
+                .desc {
+                    width: 545px;
+                    font-size: 18px;
+                    color: #353535;
+                    font-family: 'Helvetica-bold';
+                }
+
+                
+               }
+            }
+            .special-box {
+                width: 100%;
+                height: 600px;
+                margin-top: 50px;
+                position: relative;
+
+                .special-bg {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                .special-content {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-30%);
+                    top: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .spe-title {
+                        font-size: 48px;
+                        color: #FF7516;
+                        font-family: 'Helvetica-bold';
+                    }
+                    .sub {
+                        font-size: 36px;
+                        color: #353535;
+                        font-family: 'Helvetica-bold';
+                        margin-top: 60px;
+                        margin-bottom: 17px;
+                    }
+                    .text {
+                        font-size: 28px;
+                        color: #535353;
+                    }
+                    .btn {
+                        margin-top: 33px;
+                        display: block;
+                        width: 650px;
+                        height: 80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 36px;
+                        font-family: 'Helvetica-bold';
+                        color: #ffffff;
+                        border-radius: 40px;
+                        text-decoration: none;
+                        background-color: #FF7516;
+                        box-shadow: 0px 2px 6px 0px rgba(0,0,0,.4);
+                        transition: all linear 0.1s;
+                        .icon {
+                            background-image: url('../image/thermometer/you-jt.svg');
+                            background-size: cover;
+                            background-position: center center;
+                            background-repeat: no-repeat;
+                            width: 40px;
+                            height: 40px;
+                            transform: rotate(-180deg);
+                        }
+                        &:hover {
+                            background-color: #ff9e5b;
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq-area {
+            .question-box {
+                .question-item {
+                    margin-bottom: 32px;
+                   
+                    .question-title {
+                        font-size: 20px;
+                        color: #1F7EE3;
+                        margin-bottom: 10px;
+                        font-family: 'Helvetica-bold';
+                    }
+                    .question-content {
+                        font-size: 16px;
+                        color: #353535;
+                        line-height: 25px;
+                        font-family: 'Open Sans';
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
